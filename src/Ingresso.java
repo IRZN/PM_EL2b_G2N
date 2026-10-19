@@ -61,6 +61,10 @@ public abstract class Ingresso {
 	 */
 	private List<EAdicional> adicionais;
 
+	public List<EAdicional> getAdicionais() {
+		return adicionais;
+	}
+
 	/**
 	 * Constrói um ingresso com filme e sessão.
 	 *
@@ -118,7 +122,9 @@ public abstract class Ingresso {
 	 */
 	@Override 
 	public String toString() {
-		//TODO
-		return "";
+		return "Nome do filme: " + filme 
+		+ "\n Data e hora: " + sessao +
+		"\n Adicionais: " + adicionais +
+		"\n Valor: " +valorIngresso();
 	}
 }

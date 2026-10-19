@@ -1,6 +1,10 @@
-public class IngressoTest {
-    
-    //TODO
-    //escolha uma categoria de ingresso para fazer o teste conforme enunciado
+import org.junit.Test;
 
+public class IngressoTest {
+    @Test 
+    public void calcularPrecoComAdicionais {
+        MeiaEntrada ingresso = new MeiaEntrada("Ratatouille", null);
+        
+        double valor = ingresso.valorIngresso();
+    }
 }
